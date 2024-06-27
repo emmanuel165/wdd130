@@ -3,6 +3,15 @@ nav{
     padding: 10x;
 }
 
+aside {
+    width: 300px; /* Adjust the width as needed */
+    margin: 20px auto; /* Adjust the margin as needed */
+    border: 1px solid #ccc; /* Adjust the border style, width, and color as needed */
+    padding: 15px; /* Adjust the padding as needed */
+    background-color: #f9f9f9; /* Adjust the background color as needed */
+    color: #333; /* Adjust the text color as needed */
+  }
+
 nav a {
     color: white;
     display: block;
@@ -20,7 +29,11 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+aside img {
+  width: 200px;
+  height: auto;
+}
 
 p {
-    padding: 10px;
+    padding: 0; /* Set the padding to 0 */
 }
