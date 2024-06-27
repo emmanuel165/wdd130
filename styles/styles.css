@@ -15,7 +15,7 @@ aside {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1{
@@ -37,3 +37,10 @@ aside img {
 p {
     padding: 0; /* Set the padding to 0 */
 }
+
+footer {
+    margin-top: 20px; /* Adjust the margin-top as needed */
+    border-top: 1px solid #ccc; /* Adjust the border-top style, width, and color as needed */
+    text-align: center; /* Center-align the text */
+  }
+  
