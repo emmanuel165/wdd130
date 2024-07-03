@@ -32,14 +32,22 @@ header {
 
 nav {
     background-color: var(--nav-bg-color);
+    font-size: 1.2rem;
+    display: flex;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
+    display: block;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 1rem;
     margin: 0 10px;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
