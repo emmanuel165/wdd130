@@ -5,8 +5,10 @@
     --secondary-color: #e7c24f;
     --accent1-color: #a43312;
     --accent2-color: #381d2a;
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+    
     --nav-bg-color: #aabd8c;
     --nav-link-color: #ffffff;
     --nav-hover-color: #ffffff;
