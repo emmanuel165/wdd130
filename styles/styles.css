@@ -26,7 +26,7 @@ nav{
 aside {
     width: 20em; /* Adjust the width as needed */
     text-align: center;
-    position: relative;
+
     /* margin: 20px auto; /* Adjust the margin as needed */
     /* border: 1px solid #ccc; Adjust the border style, width, and color as needed */
     /* padding: 15px; Adjust the padding as needed */
@@ -36,6 +36,8 @@ aside {
 
   main img {
     float: right;
+    padding: left;
+    position: relative absolute;
 
   }
 
@@ -59,17 +61,20 @@ img {
 aside img {
   width: 200px;
   height: auto;
+  position: relative absolute;
 }
 aside h2 {
-    position: absolute;
+    position: relative absolute;
 
-    /* top: 47px;
-    left: 150px; */
+    top: 47px;
+    left: 150px;
 
 }
 
 p {
     padding: 0; /* Set the padding to 0 */
+    padding-bottom: 7%;
+    position: relative absolute;
 }
 
 footer {
