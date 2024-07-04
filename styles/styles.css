@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Class selectors */
+ /* Class Selectors */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
@@ -26,6 +26,7 @@ nav{
 aside {
     width: 20em; /* Adjust the width as needed */
     text-align: center;
+    position: relative;
     /* margin: 20px auto; /* Adjust the margin as needed */
     /* border: 1px solid #ccc; Adjust the border style, width, and color as needed */
     /* padding: 15px; Adjust the padding as needed */
@@ -61,7 +62,7 @@ aside img {
 }
 aside h2 {
     position: absolute;
-    
+
     /* top: 47px;
     left: 150px; */
 
