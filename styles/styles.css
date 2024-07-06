@@ -26,6 +26,7 @@ nav{
 aside {
     width: 20em; /* Adjust the width as needed */
     text-align: center;
+    position: relative;
 
     /* margin: 20px auto; /* Adjust the margin as needed */
     /* border: 1px solid #ccc; Adjust the border style, width, and color as needed */
@@ -36,8 +37,11 @@ aside {
 
   main img {
     float: right;
-    padding: left;
+    padding: 2px;
     position: relative absolute;
+    width: 150px;
+    height: auto;
+    margin: 0 0 1rem 1rem;
 
   }
 
