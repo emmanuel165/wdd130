@@ -35,11 +35,12 @@ nav a {
 
 main {
     padding: 1rem;
+
 }
 
 .hero {
     position: relative;
-    a
+    
 }
 
 .hero img {
@@ -57,14 +58,14 @@ main {
     padding: 10px;
     border-radius: 5px;
     top: auto;
-    bottom: 450px;
+    bottom: 550px;
 }
 
 .hero article img {
     float: right;
     margin-left: 10px;
     top: auto;
-    bottom: 450px;
+    bottom: 550px;
 }
 
 footer {
