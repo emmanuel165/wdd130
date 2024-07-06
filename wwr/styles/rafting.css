@@ -58,14 +58,14 @@ main {
     padding: 10px;
     border-radius: 5px;
     top: auto;
-    bottom: 550px;
+    bottom: 450px;
 }
 
 .hero article img {
     float: right;
     margin-left: 10px;
     top: auto;
-    bottom: 550px;
+    bottom: 450px;
 }
 
 footer {
