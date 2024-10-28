@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with White Water Rafting Adventures for inquiries, reservations, or suggestions.">
-    <title>Contact Us - White Water Rafting Adventures</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us - White Water Rafting</title>
+    <meta name="description" content="Contact the White Water Rafting company for inquiries, support, and bookings.">
+    <meta name="author" content="Owa Emmanuel">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
+
     <!-- Header Section -->
-    <header>
-        <h1>White Water Rafting Adventures</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="images/Rapids_logo.webp" alt="Rafting Company Logo" class="logo">
+        </a>
+        <h1 class="header-title">White Water Rafting Co.</h1>
+        <nav class="nav">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -20,81 +32,74 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Information Section -->
         <section class="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 River St, Rapidsville, CA 90210</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
-            <p><strong>Email:</strong> <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a></p>
-            
-            <!-- Embedded Google Map -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-
-        <!-- Employee Profiles Section -->
-        <section class="team">
-            <h2>Meet Our Team</h2>
-            <div class="employee-profiles">
-                <figure>
-                    <img src="images/employee1.webp" alt="John Doe - Guide Leader">
-                    <figcaption>John Doe - Guide Leader</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.webp" alt="Jane Smith - Safety Coordinator">
-                    <figcaption>Jane Smith - Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.webp" alt="Mike Johnson - Equipment Specialist">
-                    <figcaption>M.Johnson - Equipment Specialist</figcaption>
-                </figure>
-            </div>
+            <p>Have questions? Reach out to us below, and we’ll be happy to help!</p>
+            <ul class="info-list">
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Email:</strong> contact@raftingadventures.com</li>
+                <li><strong>Address:</strong> 123 River Road, Rapids City, RC 12345</li>
+            </ul>
         </section>
 
         <!-- Contact Form Section -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="purpose">Purpose:</label><br>
-                    <input type="radio" id="general" name="purpose" value="general" required> General Inquiry<br>
-                    <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question<br>
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-                <button type="submit">Submit Your Inquiry</button>
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
             </form>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile-grid">
+                <div class="profile">
+                    <img src="images/employee1.webp" alt="John Doe, Guide" class="profile-image">
+                    <h3>John Doe</h3>
+                    <p>Senior Guide with over 10 years of experience.</p>
+                </div>
+                <div class="profile">
+                    <img src="images/employee2.webp" alt="Jane Smith, Coordinator" class="profile-image">
+                    <h3>Jane Smith</h3>
+                    <p>Adventure Coordinator who ensures everything runs smoothly.</p>
+                </div>
+                <div class="profile">
+                    <img src="images/employee3.webp" alt="Mike Brown, Safety Officer" class="profile-image">
+                    <h3>Mike Brown</h3>
+                    <p>Safety Officer dedicated to keeping everyone safe on the water.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 White Water Rafting Adventures.| Designed by Owa-Emmanuel | wdd130 <br> All Rights Reserved.</p>
-        <a href="contact-wireframe.png" target="_blank">Contact Us Wireframe</a>
+    <footer class="footer">
+        <p>&copy; 2024 White Water Rafting Adventures | Designed by Owa Emmanuel | WDD130 | All Rights Reserved</p>
         <nav class="social-links">
-            <a href="https://facebook.com">
-                <img src="images/facebook.webp" alt="Facebook">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook.webp" alt="Facebook logo">
+            </a>    
+            <a href="https://twitter.com" aria-label="Twitter">
+                <img src="images/twitter.webp" alt="Twitter logo">
             </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.webp" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.webp" alt="Instagram">
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram.webp" alt="Instagram logo">
             </a>
         </nav>
     </footer>
