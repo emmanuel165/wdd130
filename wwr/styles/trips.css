@@ -1,0 +1,157 @@
+/* General Styling */
+body, h1, h2, h3, p, table, th, td {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #0d3a57;
+    padding: 20px 0;
+}
+  
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.logo {
+    height: 80px;
+}
+  
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+}
+
+/* Trip Grid Section */
+.trips {
+    padding: 2em;
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.trip {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.trip button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* Trip Summary Table */
+.trip-summary {
+    padding: 2em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon img {
+    width: 24px; /* Adjust to desired icon size */
+    height: 24px;
+    filter: invert(1); /* Inverts color to fit dark background */
+}
+
+.social-icon img:hover {
+    filter: invert(0.5); /* Slight color change on hover for visual effect */
+}
+
