@@ -1,0 +1,142 @@
+/* 1. Style the universal selector * rule to set the default margin to zero, padding to zero, and the box-sizing to border-box. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Style the body rule to declare the font-family and whatever else you deem necessary */
+
+body {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.2em;
+  color: #333;
+  background: #fff;
+}
+
+/* 3. Style the header and h1 as you see fit. */
+
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5em;
+  color: navy;
+  text-align: center;
+}
+
+/* 4. Style the form with a width, a centered margin, padding, border, border-radius, background-color, and a display layout of grid. */
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+/* 5. Style each fieldset to be a grid and provide a grid-gap and whatever else you deem necessary. */
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+/* 6. Style the fieldset legend. */
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+/* 7. Option: Style all the form elements (label, input, button, select, and textarea) with a different font family and in whatever other way you see fit that is different than the headings and legends. */
+
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* 8. Style the label elements to text-align right and have a padding-right value */
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* 9. Style the input, select, and textarea elements to have padding and a larger font-size. Note that this is critical in order to provide spacing inside of the form input elements. */
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* 10. Style the checkbox element to be larger than the default size using width and height. Change the vertical-align to be at the bottom in order for it to fit in its space.
+The best practice CSS selector in this case is input[type="checkbox"] */
+
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/* 
+11. Style the button as you see fit along with the button:hover pseudo-class. */
+
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/*12. Style the footer */
+
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+
+/* CSS Style the Class Selectors
+Style the .form-item class selector to have a display of grid so that you can align the label and input/select elements. Also apply an align-items of centered for vertical alignment in a multi-column layout. */
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+/* Style the .column1 class selector to have a grid-template-columns of 3fr 1fr so that the the first column, the label, takes three times the space as the second column. Also, add a margin as needed. You can adjust this value to get the desired spacing. */
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+/* Style the .column2 class selector to have a grid-template-columns of 1fr 2fr so that the the first column, the label, takes half the space as the second column. Also, add a margin as needed. You can adjust this value to get the desired spacing. */
+
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  

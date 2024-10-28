@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <meta name="description" content="Owa Emmanuel | WDD 130 | HTML Form - User Poll">
+    <meta name="author" content="Owa Emmanuel">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail">
+            <!-- Add HTML Divs
+            Create div (divider) elements around each form label-input/select pair in your poll-form.html document.
+            There should be four: input type text, input type email, select, and input type checkbox.
+            Give each of those div elements a class attribute named form-item. Here is an example on the first item: -->
+            <div class="form-item">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullanme">
+            </div>
+            <!-- additional class name of column2. -->
+            <div class="form-item column2">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullanme">
+            </div>
+            <div class="form-item column2">
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Questions</legend>
+
+            <label for="browser">What is your favorite internet browser?</label>
+            <select id="browser" name="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="safari">Safari</option>
+                <option value="edge">Edge</option>
+                <option value="brave">Brave</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater, Florida; Amsterdam, Netherlands; Timbuktu, Mali"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Poll</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 | HTML Form - User Poll Activity | Owa-Emmanuel</p>
+    </footer>
+
+</body>
+
+</html>

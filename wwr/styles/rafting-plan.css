@@ -1,0 +1,156 @@
+/* Global Style and Color Variables */
+:root {
+    --primary-color: #264969; /* Deep Blue */
+    --secondary-color: #505033; /* Earthy Green */
+    --accent1-color: #CFCFB4; /* Light Tan */
+    --accent2-color: #B4CDE4; /* Light Blue */
+    --heading-font: 'Merriweather', serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--accent1-color);
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    margin: 0 auto 20px;
+    /* float: left; */
+    margin-left: 20px;
+    
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-links li a:hover {
+    color: var(--accent2-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+.about h2 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+/* Trips Section */
+.trips {
+    padding: 60px 20px;
+    background-color: var(--accent2-color);
+    text-align: center;
+}
+
+.trips h2 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.trips p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.trips ul {
+    list-style-type: none;
+}
+
+.trips li {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}

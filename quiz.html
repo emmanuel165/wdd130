@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <meta name="description" content="Owa Emmanuel| WDD 130| Home_page_quiz">
+    <meta name="author" content="Owa Emmanuel">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>HTML & CSS Basics Quiz</h1>
+
+    <form action="#" method="POST">
+        <!-- Question 1: Text Input -->
+        <label for="q1">What does HTML stand for?</label>
+        <input type="text" id="q1" name="q1" required>
+
+        <!-- Question 2: Textarea -->
+        <label for="q2">Describe the purpose of CSS in web development.</label>
+        <textarea id="q2" name="q2" rows="4" required></textarea>
+
+        <!-- Question 3: Select Dropdown -->
+        <label for="q3">Which HTML tag is used for the largest heading?</label>
+        <select id="q3" name="q3" required>
+            <option value="" selected disabled>Choose One...</option>
+            <option value="h1">&lt;h1&gt;</option>
+            <option value="h3">&lt;h3&gt;</option>
+            <option value="p">&lt;p&gt;</option>
+        </select>
+
+        <!-- Question 4: Number Input -->
+        <label for="q4">How many heading levels does HTML have?</label>
+        <input type="number" id="q4" name="q4" min="1" max="10" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>

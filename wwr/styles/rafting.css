@@ -1,0 +1,218 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1e3d58; /* Deep blue-green */
+    --secondary-color: #6b8e23; /* Olive green */
+    --font-color: #333; /* Dark grey for text */
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+    --accent1-color: #f5f5f5; /* Light background color */
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent1-color);
+}
+
+/* Header Layout using CSS Grid */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}
+
+.header-grid .logo {
+    max-width: 120px;
+}
+
+.header-grid h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: white;
+}
+
+/* Navigation Layout using Flexbox */
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.flex-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.flex-nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+article {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: white;
+}
+
+.article-img {
+    float: right;
+    max-width: 150px;
+    margin-left: 20px;
+}
+
+/* History Section */
+.history {
+    padding: 20px;
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.history-content img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Adventure Awaits Section */
+.rafting-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+.rafting-gallery h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+/* Grid for the images */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure figcaption {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: var(--font-color);
+}
+
+/* Hover effect on the images */
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Space between the main footer elements */
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+/* Footer Navigation */
+.footer nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Social Media Links */
+.social-links {
+    display: flex;               /* Make the icons display inline */
+    gap: 10px;                   /* Adjusts space between the icons */
+    justify-content: flex-end;    /* Align the icons to the right */
+    flex: 1;                     /* Pushes the social links to the right side */
+}
+
+.social-icon {
+    width: 20px;                 /* Smaller icon width */
+    height: 20px;                /* Smaller icon height */
+    transition: transform 0.3s ease;  /* Hover effect transition */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);       /* Slight zoom on hover */
+}
