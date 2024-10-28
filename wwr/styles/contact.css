@@ -1,71 +1,62 @@
-/* Basic Reset */
-* {
+/* CSS Variables */ 
+:root {
+    --primary-color: #1e3d58; /* Deep blue-green */
+    --secondary-color: #6b8e23; /* Olive green */
+    --font-color: #333; /* Dark grey for text */
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+    --accent1-color: #f5f5f5; /* Light background color */
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: var(--accent1-color);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Header */
-.header {
-    display: flex;
+/* Header Layout using CSS Grid */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    background-color: #24476f;
-    padding: 15px 20px;
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}
+
+.header-grid .logo {
+    max-width: 120px;
+}
+
+.header-grid h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
     color: white;
 }
 
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-.header-title {
-    font-family: 'Merriweather', serif;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.nav-list {
-    list-style: none;
+/* Navigation Layout using Flexbox */
+.flex-nav {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    list-style: none;
 }
 
-.nav-list a {
+.flex-nav li a {
     color: white;
     text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
+    padding: 10px;
 }
 
-.nav-list a:hover {
-    color: #ffba08;
+.flex-nav li a:hover {
+    text-decoration: underline;
 }
 
 /* Main Content */
 .main-content {
     padding: 20px;
-}
-
-/* Contact Information Section */
-.contact-info {
-    background-color: #f3f4f6;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.contact-info h2 {
-    font-family: 'Merriweather', serif;
-    color: #24476f;
-    margin-bottom: 10px;
 }
 
 /* Contact Form Section */
@@ -77,8 +68,8 @@ body {
 }
 
 .contact-form-section h2 {
-    font-family: 'Merriweather', serif;
-    color: #24476f;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -99,71 +90,100 @@ body {
     border-radius: 4px;
 }
 
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Submit Button */
 .submit-button {
-    padding: 12px;
-    background-color: #24476f;
+    background-color: var(--secondary-color);
     color: white;
+    padding: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .submit-button:hover {
-    background-color: #1b375d;
+    background-color: #4e6b31; /* Darker olive */
 }
 
-/* Employee Profiles Section */
-.employee-profiles {
+/* Map Section */
+.embedded-map {
     margin-bottom: 20px;
 }
 
-.employee-profiles h2 {
-    font-family: 'Merriweather', serif;
-    color: #24476f;
-    margin-bottom: 15px;
+.map-container {
+    display: flex;
+    justify-content: space-between; /* Align map and contact info side by side */
+    padding-bottom: 25px 25px;
+    margin-top: auto 25px;
+}
+
+.contact-info {
+    margin-left: 20px; /* Space between map and contact info */
+    flex: 1; /* Allow it to grow and take up remaining space */
+}
+
+.contact-info h2 {
+    font-weight: bold; /* Make the contact heading bold */
+    color: var(--primary-color);
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    font-weight: bold; /* Make the contact information bold */
+}
+
+/* Adjust iframe to have a fixed width */
+.map-container iframe {
+    width: 60%; /* Adjust width to allow space for contact info */
+    height: 200px; /* Fixed height */
+}
+
+
+/* Employee Profiles Section */
+.employee-profiles {
+    margin-top: 20px;
 }
 
 .profile-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .profile {
-    flex: 1;
-    min-width: 150px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     text-align: center;
+    padding: 10px;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 100%;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
-.profile h3 {
-    font-family: 'Merriweather', serif;
-    color: #24476f;
-}
-
-/* Footer */
+/* Footer Section */
 .footer {
-    background-color: #24476f;
-    color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
+    padding: 15px 0;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.social-links a {
-    margin: 0 10px;
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.social-links img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* Ensures icons are visible on dark background */
+.footer .social-icon {
+    width: 30px;
+    height: auto;
 }
