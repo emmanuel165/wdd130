@@ -208,9 +208,26 @@ figure figcaption {
 }
 
 .social-icon {
-    width: 20px;                 /* Smaller icon width */
-    height: 20px;                /* Smaller icon height */
+    width: 10px;                 /* Smaller icon width */
+    height: 10px;                /* Smaller icon height */
     transition: transform 0.3s ease;  /* Hover effect transition */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-links img {
+    width: 24px; /* Adjust to desired icon size */
+    height: 24px;
+    filter: invert(1); /* Inverts color to fit dark background */
+}
+
+.social-links img:hover {
+    filter: invert(0.5); /* Slight color change on hover for visual effect */
 }
 
 .social-icon:hover {
