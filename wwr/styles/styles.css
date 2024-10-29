@@ -138,31 +138,68 @@ header {
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    padding: 1.5rem;
+.footer {
+    display: flex;
+    justify-content: space-between; /* Space between the main footer elements */
+    align-items: center;
+    padding: 20px;
     background-color: #333;
-    color: #fff;
+    color: white;
+    flex-wrap: wrap;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    
+
 }
 
-footer p {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+/* Footer Navigation */
+.footer nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
-.social-icons {
+.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Social Media Links */
+.social-links {
+    display: flex;               /* Make the icons display inline */
+    gap: 10px;                   /* Adjusts space between the icons */
+    justify-content: flex-end;    /* Align the icons to the right */
+    flex: 1;                     /* Pushes the social links to the right side */
+}
+
+.social-icon {
+    width: 25px;                 /* Smaller icon width */
+    height: 24px;                /* Smaller icon height */
+    transition: transform 0.3s ease;  /* Hover effect transition */
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 0.5rem;
 }
 
-.social-icon img {
+.social-links img {
     width: 24px; /* Adjust to desired icon size */
     height: 24px;
     filter: invert(1); /* Inverts color to fit dark background */
 }
 
-.social-icon img:hover {
+.social-links img:hover {
     filter: invert(0.5); /* Slight color change on hover for visual effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);       /* Slight zoom on hover */
 }
