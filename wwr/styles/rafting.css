@@ -208,8 +208,8 @@ figure figcaption {
 }
 
 .social-icon {
-    width: 10px;                 /* Smaller icon width */
-    height: 10px;                /* Smaller icon height */
+    width: 25px;                 /* Smaller icon width */
+    height: 24px;                /* Smaller icon height */
     transition: transform 0.3s ease;  /* Hover effect transition */
 }
 
